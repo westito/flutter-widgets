@@ -2221,7 +2221,7 @@ abstract class _IMonthView extends RenderBox
       textDirection: TextDirection.ltr,
       textWidthBasis: TextWidthBasis.longestLine);
 
-  static const int _selectionPadding = 2;
+  static const int _selectionPadding = 0;
 
   /// Caches [SemanticsNode]s created during [assembleSemanticsNode] so they
   /// can be re-used when [assembleSemanticsNode] is called again. This ensures
@@ -4272,7 +4272,7 @@ void _drawMonthCellsAndSelection(PaintingContext context, Size size,
         monthView.datePickerTheme.rangeSelectionTextStyle!;
 
     Decoration? dateDecoration;
-    const double padding = 1;
+    const double padding = 0;
 
     final int viewStartIndex = j * datesCount;
     final int viewEndIndex = ((j + 1) * datesCount) - 1;
