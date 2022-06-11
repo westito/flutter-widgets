@@ -8272,9 +8272,9 @@ class _PickerHeaderPainter extends CustomPainter {
       _headerText += j == 1 ? ' $text' : text;
       TextStyle? style =
           headerStyle.textStyle ?? datePickerTheme.headerTextStyle;
-      if (hovering) {
+      /*if (hovering) {
         style = style!.copyWith(color: hoverColor);
-      }
+      }*/
 
       final TextSpan span = TextSpan(text: text, style: style);
       _textPainter.text = span;
